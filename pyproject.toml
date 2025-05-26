@@ -1,0 +1,18 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools >= 64"]
+
+[project]
+name = "agno_smartread"
+version = "0.1.0"
+dependencies = [
+  "aiqtoolkit[langchain]",
+]
+requires-python = ">=3.11,<3.13"
+description = "Custom AIQ Toolkit Workflow"
+classifiers = ["Programming Language :: Python"]
+
+
+
+[project.entry-points.'aiq.components']
+agno_smartread = "agno_smartread.register"

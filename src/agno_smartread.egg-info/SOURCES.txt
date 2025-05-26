@@ -1,0 +1,10 @@
+pyproject.toml
+src/agno_smartread/__init__.py
+src/agno_smartread/agno_smartread_function.py
+src/agno_smartread/register.py
+src/agno_smartread.egg-info/PKG-INFO
+src/agno_smartread.egg-info/SOURCES.txt
+src/agno_smartread.egg-info/dependency_links.txt
+src/agno_smartread.egg-info/entry_points.txt
+src/agno_smartread.egg-info/requires.txt
+src/agno_smartread.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[aiq.components]
+agno_smartread = agno_smartread.register
