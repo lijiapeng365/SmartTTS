@@ -33,9 +33,9 @@ llms:
   # 这是你希望使用的模型配置
   nim_llm_config: # 你在 workflow 中引用的LLM配置名称
     _type: nim  # AIQ Toolkit 中定义的 NIM 类型
-    base_url: https://api.deepseek.com/v1
-    api_key: sk-2a95f51e66104c64968eef464622f719
-    model_name: deepseek-chat # 你的模型名称
+    base_url: 
+    api_key: 
+    model_name:  # 你的模型名称
     temperature: 0.0
     # 你可能需要在这里添加其他NIM LLM所需的参数，
     # 例如API endpoint (如果不是AIQ默认的), API key (如果需要且AIQ不自动管理)等。
@@ -65,7 +65,7 @@ workflow: # 这是 `aiq run` 的主入口点
   _type: aiq_custom_tts_from_test     # **必须匹配** Python 代码中 SmartReadTTSConfig 的 `name`
   llm_name: nim_llm_config            # **重要**: 明确使用 nim_llm_config
   temp_audio_directory_path: "./aiq_audio_output_workflow_level" # 你希望的临时音频文件存放路径
-  mcp_server_url: "https://mcp.api-inference.modelscope.cn/sse/013bf4e6550448" # 你的本地MCP服务器URL，或者ModelScope的URL
+  mcp_server_url: "" # 你的本地MCP服务器URL，或者ModelScope的URL
   mcp_client_timeout: 45               # SSEClientParams的超时时间 (秒) - 酌情调整
   mcp_client_sse_read_timeout: 45      # SSEClientParams的SSE读取超时 (秒) - 酌情调整
   mcp_tools_overall_timeout: 90        # MCPTools上下文管理器的整体超时 (秒) - 酌情调整
